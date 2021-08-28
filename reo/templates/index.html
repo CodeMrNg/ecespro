@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+{% block content %} 
+<section class="container ">
+
+<div class="conainer-fluid row">
+
+    <div class="col-4">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="valider" />
+        </form>
+    </div>
+   
+    <div class="col-8">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quibusdam quidem fuga perferendis officiis delect
+    </div> 
+</div>
+</section>
+{% endblock content %}
